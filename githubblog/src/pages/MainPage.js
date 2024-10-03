@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles/MainPage.css'; // 스타일 파일을 추가합니다.
+import BootstrapButton from '../components/BootstrapButton';
+import BootstrapDropdown from '../components/BootstrapDropdown';
 
 const posts = [
   { id: 1, title: '첫 번째 포스트', date: '2024-01-01', excerpt: '이것은 첫 번째 포스트의 요약입니다.', slug: 'first-post' },
@@ -30,6 +32,9 @@ const MainPage = () => {
             </div>
           ))}
         </div>
+
+        <BootstrapButton></BootstrapButton>
+        <BootstrapDropdown></BootstrapDropdown>
       </main>
 
       <footer>
