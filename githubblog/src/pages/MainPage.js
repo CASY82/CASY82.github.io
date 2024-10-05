@@ -1,7 +1,5 @@
 import React from 'react';
 import '../styles/MainPage.css'; // 스타일 파일을 추가합니다.
-import BootstrapButton from '../components/BootstrapButton';
-import BootstrapDropdown from '../components/BootstrapDropdown';
 
 const posts = [
   { id: 1, title: '첫 번째 포스트', date: '2024-01-01', excerpt: '이것은 첫 번째 포스트의 요약입니다.', slug: 'first-post' },
@@ -12,34 +10,17 @@ const posts = [
 const MainPage = () => {
   return (
     <div className="main-page">
-      <header>
-        <h1>내 블로그</h1>
-        <nav>
-          <a href="/">홈</a>
-          <a href="/about">소개</a>
-        </nav>
-      </header>
-
-      <main>
-        <h2>포스트 목록</h2>
-        <div className="post-list">
-          {posts.map((post) => (
-            <div className="post-card" key={post.id}>
-              <h3>{post.title}</h3>
-              <p>{post.date}</p>
-              <p>{post.excerpt}</p>
-              <a href={`/posts/${post.slug}`} className="read-more">읽기</a>
-            </div>
-          ))}
-        </div>
-
-        <BootstrapButton></BootstrapButton>
-        <BootstrapDropdown></BootstrapDropdown>
-      </main>
-
-      <footer>
-        <p>© 2024 내 블로그. 모든 권리 보유.</p>
-      </footer>
+      <h2>포스트 목록</h2>
+      <div className="post-list">
+        {posts.map((post) => (
+          <div className="post-card" key={post.id}>
+            <h3>{post.title}</h3>
+            <p>{post.date}</p>
+            <p>{post.excerpt}</p>
+            <a href={`/posts/${post.slug}`} className="read-more">읽기</a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

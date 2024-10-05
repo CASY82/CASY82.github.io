@@ -1,0 +1,36 @@
+/* Header.css */
+.header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+}
+
+nav table {
+    margin: 0 auto; /* 테이블을 가운데 정렬 */
+    border-collapse: collapse; /* 테이블 경계선 합치기 */
+}
+
+nav td {
+    padding: 10px; /* 셀 안의 여백 */
+    border: none; /* 기본 테이블 경계선 제거 */
+}
+
+/* Sidebar.css */
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Footer.css */
+.footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
