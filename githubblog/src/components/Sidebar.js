@@ -8,8 +8,8 @@ const Sidebar = () => {
             <h2>Menu</h2>
             <ul>
                 <li><a href="/">Dashboard</a></li>
-                <li><a href="/settings">Settings</a></li>
-                <li><a href="/profile">Profile</a></li>
+                <li><a href="/">Settings</a></li>
+                <li><a href="/">Profile</a></li>
             </ul>
         </aside>
     );

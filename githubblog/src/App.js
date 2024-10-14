@@ -2,9 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MainPage from './pages/MainPage';
-import Header from './pages/Header';
-import Sidebar from './pages/Sidebar';
-import Footer from './pages/Footer';
+import PostList from './pages/PostList'
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import Footer from './components/Footer';
 import './styles/App.css';
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <main>
           <Routes>
             <Route path="/" element={<MainPage />} />
+            <Route path="/posts" element={<PostList />} />
           </Routes>
         </main>
       </div>

@@ -10,7 +10,7 @@ const posts = [
 const MainPage = () => {
   return (
     <div className="main-page">
-      <h2>포스트 목록</h2>
+      <h2>대표 포스트 목록</h2>
       <div className="post-list">
         {posts.map((post) => (
           <div className="post-card" key={post.id}>
