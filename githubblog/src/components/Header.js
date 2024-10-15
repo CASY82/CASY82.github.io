@@ -12,8 +12,8 @@ const Header = () => {
                 <table style={{ margin: '0 auto' }}>
                     <tbody>
                         <tr>
-                            <td><BootstrapButton label="Home" href = "/" /></td>
-                            <td><BootstrapButton label="Posts" href = "/posts" /></td>
+                            <td><BootstrapButton label="Home" to = "/" /></td>
+                            <td><BootstrapButton label="Posts" to = "/posts" /></td>
                             <td><BootstrapDropdown /></td>
                         </tr>
                     </tbody>

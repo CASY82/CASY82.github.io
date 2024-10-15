@@ -1,11 +1,12 @@
 import Badge from 'react-bootstrap/Badge';
-import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
-function BootstrapButton({ label, href }) {
+
+function BootstrapButton({ label, to }) {
   return (
     <div>
       <h1>
-        <Badge bg="secondary" as={Button} href = {href} target = "_self" rel="noopener noreferrer">
+        <Badge bg="secondary" as={Link} to = {to}>
           {label}
         </Badge>
       </h1>
