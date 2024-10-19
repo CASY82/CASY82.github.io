@@ -1,3 +1,9 @@
+/**
+ * Deprecated Now
+ * @param {} param0 
+ * @returns 
+ */
+
 const ImageComponent = ({ node, ...props }) => {
     // props: {src: '', alt: ''}
     // node : props를 포함한 추가 정보들을 담은 객체, node 객체에서 props는 properties를 가리킴, 

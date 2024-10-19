@@ -5,7 +5,6 @@ import rehypeHighlight from 'rehype-highlight'; // 코드 하이라이팅
 import plantumlEncoder from 'plantuml-encoder'; // PlantUML 인코딩 라이브러리
 import remarkGfm from 'remark-gfm'; // GitHub Flavored Markdown 지원
 import 'highlight.js/styles/a11y-dark.css'; // 코드 하이라이트 테마
-import ImageComponent from '../components/ImageComponent';
 
 const Post = () => {
     const [markdownContents, setMarkdownContents] = useState([]);
@@ -59,7 +58,6 @@ const Post = () => {
                     <hr />
                 </div>
             ))}
-            <img src="https://www.plantuml.com/plantuml/png/AyxEp2j8B4hCLIXEBInDpKjEzKqjBavCJtNCoKpFKoZAJCyeuULooazIqBLJ08ebfofOAGI1b1O3nI42G1cG0f1uSK5-Nd4g0000"/>
         </div>
     );
 };

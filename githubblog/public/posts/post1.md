@@ -3,13 +3,16 @@
 
 끼얏호우
 
-```
 @startuml
+
+participant clone
+
 skinparam sequenceMessageAlign right
 Bob -> Alice : Request
 Alice -> Bob : Response
+clone -> Alice : 가능함?
 @enduml
-```
+
 
 ```javascript
 const a = '안녕'
